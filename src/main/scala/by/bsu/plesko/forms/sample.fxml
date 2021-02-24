@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsu.plesko.controller.Controller">
+   <children>
+      <Label layoutX="134.0" layoutY="318.0" text="CMYK">
+         <font>
+            <Font name="Segoe Print" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="462.0" layoutY="319.0" text="LAB">
+         <font>
+            <Font name="Segoe Print" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="790.0" layoutY="319.0" text="XYZ">
+         <font>
+            <Font name="Segoe Print" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="384.0" text="C:">
+         <font>
+            <Font name="Segoe Print" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="467.0" text="M:">
+         <font>
+            <Font name="Segoe Print" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="547.0" text="Y:">
+         <font>
+            <Font name="Segoe Print" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="622.0" text="K:">
+         <font>
+            <Font name="Segoe Print" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="382.0" text="L:">
+         <font>
+            <Font name="Segoe Print" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="467.0" text="A:">
+         <font>
+            <Font name="Segoe Print" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="382.0" layoutY="545.0" text="B:">
+         <font>
+            <Font name="Segoe Print" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="712.0" layoutY="384.0" text="X:">
+         <font>
+            <Font name="Segoe Print" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="713.0" layoutY="466.0" text="Y:">
+         <font>
+            <Font name="Segoe Print" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="712.0" layoutY="543.0" text="Z:">
+         <font>
+            <Font name="Segoe Print" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cInCMYKTextField" layoutX="93.0" layoutY="392.0" prefHeight="26.0" prefWidth="156.0" />
+      <TextField fx:id="mInCMYKTextField" layoutX="93.0" layoutY="475.0" prefHeight="26.0" prefWidth="156.0" />
+      <TextField fx:id="yInCMYKTextField" layoutX="93.0" layoutY="555.0" prefHeight="26.0" prefWidth="156.0" />
+      <TextField fx:id="kInCMYKTextField" layoutX="93.0" layoutY="630.0" prefHeight="26.0" prefWidth="156.0" />
+      <TextField fx:id="lInLABTextField" layoutX="436.0" layoutY="390.0" prefHeight="26.0" prefWidth="156.0" />
+      <TextField fx:id="aInLABTextField" layoutX="436.0" layoutY="474.0" prefHeight="26.0" prefWidth="156.0" />
+      <TextField fx:id="bInLABTextField" layoutX="436.0" layoutY="555.0" prefHeight="26.0" prefWidth="156.0" />
+      <TextField layoutX="765.0" layoutY="392.0" prefHeight="26.0" prefWidth="156.0" fx:id="xInXYZTextField" />
+      <TextField fx:id="yInXYZTextField" layoutX="765.0" layoutY="475.0" prefHeight="26.0" prefWidth="156.0" />
+      <TextField fx:id="zInXYZTextField" layoutX="765.0" layoutY="555.0" prefHeight="26.0" prefWidth="156.0" />
+      <ColorPicker fx:id="picker" layoutX="336.0" layoutY="199.0" onAction="#pickerAction" prefHeight="32.0" prefWidth="318.0" />
+      <Circle fx:id="circle" fill="DODGERBLUE" layoutX="495.0" layoutY="89.0" radius="57.0" stroke="BLACK" strokeType="INSIDE" />
+      <Slider fx:id="cInCMYKSlider" layoutX="93.0" layoutY="427.0" prefHeight="14.0" prefWidth="156.0" />
+      <Slider fx:id="mInCMYKSlider" layoutX="93.0" layoutY="510.0" prefHeight="14.0" prefWidth="156.0" />
+      <Slider fx:id="yInCMYKSlider" layoutX="93.0" layoutY="590.0" prefHeight="14.0" prefWidth="156.0" />
+      <Slider fx:id="kInCMYKSlider" layoutX="93.0" layoutY="665.0" prefHeight="14.0" prefWidth="156.0" />
+      <Slider fx:id="lInLABSlider" layoutX="438.0" layoutY="427.0" prefHeight="14.0" prefWidth="156.0" />
+      <Slider fx:id="aInLABSlider" layoutX="438.0" layoutY="510.0" prefHeight="14.0" prefWidth="156.0" />
+      <Slider fx:id="bInLABSlider" layoutX="438.0" layoutY="590.0" prefHeight="14.0" prefWidth="156.0" />
+      <Slider layoutX="765.0" layoutY="427.0" prefHeight="14.0" prefWidth="156.0" fx:id="xInXYZSlider" />
+      <Slider fx:id="yInXYZSlider" layoutX="765.0" layoutY="510.0" prefHeight="14.0" prefWidth="156.0" />
+      <Slider fx:id="zInXYZSlider" layoutX="765.0" layoutY="590.0" prefHeight="14.0" prefWidth="156.0" />
+      <Line endX="923.0" layoutX="100.0" layoutY="305.0" startX="-100.0" />
+      <Line endX="375.67974853515625" endY="275.5619812011719" layoutX="185.0" layoutY="443.0" rotate="60.0" startX="-100.0" />
+      <Line endX="375.67974853515625" endY="275.5619812011719" layoutX="538.0" layoutY="442.0" rotate="60.0" startX="-100.0" />
+   </children>
+</AnchorPane>
