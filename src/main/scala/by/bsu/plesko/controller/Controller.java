@@ -143,20 +143,24 @@ public class Controller {
 
     @FXML
     void pickerAction(ActionEvent event) {
-        float red = (float) picker.getValue().getRed() * 255;
-        float green = (float) picker.getValue().getGreen() * 255;
-        float blue = (float) picker.getValue().getBlue() * 255;
+        if (!lockerClose) {
+            lockerClose = true;
+            float red = (float) picker.getValue().getRed() * 255;
+            float green = (float) picker.getValue().getGreen() * 255;
+            float blue = (float) picker.getValue().getBlue() * 255;
 
-        ColorModels.RGB rgb = ColorModels.RGB$.MODULE$.create(Math.round(red), Math.round(green), Math.round(blue));
-        ColorModels.CMYK cmyk = rgb.toCMYK();
-        ColorModels.XYZ xyz = rgb.toXYZ();
-        ColorModels.LAB lab = xyz.toLab();
+            ColorModels.RGB rgb = ColorModels.RGB$.MODULE$.create(Math.round(red), Math.round(green), Math.round(blue));
+            ColorModels.CMYK cmyk = rgb.toCMYK();
+            ColorModels.XYZ xyz = rgb.toXYZ();
+            ColorModels.LAB lab = xyz.toLab();
 
-        updateCMYKTextField(cmyk);
-        updateXYZTextField(xyz);
-        updateLABTextField(lab);
+            updateCMYKTextField(cmyk);
+            updateXYZTextField(xyz);
+            updateLABTextField(lab);
 
-        circle.setFill(picker.getValue());
+            circle.setFill(picker.getValue());
+            lockerClose = false;
+        }
     }
 
     boolean lockerClose = false;
