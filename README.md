@@ -5,7 +5,7 @@
 При попытке первого преобразования появится "Warning", который предупредит о возможной прогрешности, которая может появиться из-за обрезания.
 
 ## Ссылки
-![link](https://drive.google.com/drive/folders/1akkUjER1ff44BBRW-lm87twWNP6HuwFd?usp=sharing) - ссылка на Google Drive, где хранится .exe фалй
+https://drive.google.com/drive/folders/1akkUjER1ff44BBRW-lm87twWNP6HuwFd?usp=sharing - ссылка на Google Drive, где хранится .exe фалй
 
 ## Скриншот работы программы 
 ![Снимок экрана 2021-02-25 001137](https://user-images.githubusercontent.com/56609836/109067641-d5c30d00-76ff-11eb-83c1-8df91b9186bc.png)
